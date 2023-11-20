@@ -8,3 +8,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Here you can send the data to your server or a third-party email service
     alert('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
