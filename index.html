@@ -1,58 +1,60 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Amr Bakouban - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Amr Bakouban</title>
 </head>
 <body>
-
-<div class="starry-bg">
-    <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
-</div>
-
-    <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        
-<section id="about">
-    <div class="about-photo">
-        <!-- Placeholder for photo -->
-        <img src="path_to_your_photo.jpg" alt="Your Photo" style="width:100%;">
-    </div>
-    <div class="about-text">
-        <!-- Your existing about text goes here -->
-    </div>
-</section>
-
-
-        <section id="projects">
-            <h1>My Projects!</h1>
-            <!-- Add your projects here -->
-            <div class="project">
-                <h1>Cycling Club Android App</h1>
-                <p>Collaborated with a team of 5 to develop a fully functional android application...</p>
-            </div>
-            <!-- More projects can be added here -->
-        </section>
-
-        <section id="contact">
-            <h1>Contact Me!</h1>
-            <!-- Contact form or information can be added here -->
-        </section>
-
-        <footer>
-            <p>© 2023 Amr Bakouban</p>
-        </footer>
-    </div>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>My Portfolio</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to My Portfolio</h2>
+                    <h3>Last Updated (January 2024)</h3>
+                </hgroup>
+                <p>Hey! My Name is Amr Bakouban. I am currenlty a 2nd Year Honours Computer Science student attending University of Ottawa</p>
+                <figure>
+                    <img src="https://source.unsplash.com/random/800x600" alt="Featured Blog Post" />
+                    <figcaption><a href="#" target="_blank">Read More</a></figcaption>
+                </figure>
+                <h3>Projects</h3>
+                <p>Below you may see a variety of different projects that I have worked on in this past year. </p>
+                <h3>About Me</h3>
+                <p>I am a passionate writer and a curious soul, eager to share my experiences and learnings with you.</p>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Contact Me!</h2>
+                    <h3>Get in touch with me:</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="message" name="message" placeholder="Enter your message" aria-label="Description" required />
+                    <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="Email" required />
+                    <button type="submit" onclick="event.preventDefault()">Send</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a>
+        </small>
+    </footer>
 </body>
 </html>
